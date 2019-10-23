@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UNIT CONVERTER FROM MILES TO KILOMETER"
+        android:background="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_marginLeft="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="2dp"
+        android:layout_alignLeft="@id/textMiles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/textKilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Kilometers:"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@id/textMiles"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        />
+    <EditText
+        android:id="@+id/editKilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:inputType="number"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="90dp"
+        android:ems="10"
+        />
+
+
+    <TextView
+        android:id="@+id/textMiles"
+        android:layout_below="@id/editKilometers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Miles:"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        />
+
+    <EditText
+        android:id="@+id/editMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textMiles"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="92dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textStyle="bold"></EditText>
+
+    <Button
+      android:id="@+id/convert_Btn"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Convert"
+      android:layout_below="@+id/editMiles"
+      android:textStyle="bold"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="80dp">
+
+  </Button>
+
+
+</RelativeLayout>
